@@ -1,1 +1,23 @@
 /* styles go here */
+
+header {
+    padding: 24px;
+    height: 400px;
+    background-color: #eff2f7;
+    background: url(../img/bg-sm.jpg) center center / cover no-repeat;
+    /* this is a shorthand for background-image, background-position (x & y), background-size and background-repeat */
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* as the screen get wider the bg-image streches to fit and the lower sized image doesnt look good anymore on the screen. We can use our medica queries tp swap out the background image for a lerger, higher quality */
+
+@media only screen and (min-width: 950px) {
+    header {
+        background: url(../img/bg-md.jpg) center center / cover no-repeat;
+    }
+    
+}
